@@ -1,0 +1,355 @@
+<div class="sub-header__wrapper--right">
+    <button class="sub-header__button sub-header__button--radio" disabled aria-label="Radio en vivo">
+<svg class="live-radio-btn" width="15" height="12" fill="none"><path fill="#fff" d="M3.307.719a.747.747 0 0 1 0 1.056 5.975 5.975 0 0 0 0 8.45.746.746 0 1 1-1.056 1.056A7.47 7.47 0 0 1 2.25.72a.747.747 0 0 1 1.056 0m9.506 0a7.47 7.47 0 0 1 0 10.562.747.747 0 0 1-1.056-1.056 5.975 5.975 0 0 0 0-8.45A.747.747 0 0 1 12.813.72m-7.29 2.146a.747.747 0 0 1 0 1.056 2.927 2.927 0 0 0 0 4.139.747.747 0 1 1-1.056 1.056 4.42 4.42 0 0 1 0-6.251.747.747 0 0 1 1.056 0m5.196 0a4.42 4.42 0 0 1 0 6.25.746.746 0 1 1-1.057-1.055 2.927 2.927 0 0 0 0-4.14.747.747 0 0 1 1.056-1.055M7.592 4.933a1.12 1.12 0 1 1 0 2.24 1.12 1.12 0 0 1 0-2.24"/></svg>
+<svg class="loader-live-btn" style="margin: 0 -2px 0 -6px;" width="25" height="25" viewBox="0 0 200 200"><radialGradient id="a" cx=".66" cy=".313" fx=".66" fy=".313" gradientTransform="scale(1.5)"><stop offset="0" stop-color="#FFF"/><stop offset=".3" stop-color="#FFF" stop-opacity=".9"/><stop offset=".6" stop-color="#FFF" stop-opacity=".6"/><stop offset=".8" stop-color="#FFF" stop-opacity=".3"/><stop offset="1" stop-color="#FFF" stop-opacity="0"/></radialGradient><circle cx="100" cy="100" r="70" fill="none" stroke="url(#a)" stroke-dasharray="200 1000" stroke-linecap="round" stroke-width="15" transform-origin="center"><animateTransform attributeName="transform" calcMode="spline" dur="2" keySplines="0 0 1 1" keyTimes="0;1" repeatCount="indefinite" type="rotate" values="360;0"/></circle><circle cx="100" cy="100" r="70" fill="none" stroke="#FFF" stroke-linecap="round" stroke-width="15" opacity=".2" transform-origin="center"/></svg>
+<span>Radio en Vivo</span>
+</button>
+<div class="smallPlayer">
+<button type="button" class="faux-audio smallPlayer__playPause" data-id="0">
+<i class="icon-media"></i>
+<script>
+var _fmedia = _fmedia || {};
+_fmedia[0] = {all: true};
+</script>
+</button>
+<button class="smallPlayer__toggle" aria-label="" onclick="document.documentElement.classList.toggle('player--open')">
+<svg width="12" height="8" viewBox="0 0 12 8" fill="none">
+<path d="M1.41 0.580078L6 5.17008L10.59 0.580078L12 2.00008L6 8.00008L0 2.00008L1.41 0.580078Z" fill="black"/>
+</svg>
+</button>
+<div class="smallPlayer__tooltip">
+Reproduciendo
+</div>
+</div>
+<div id="rppPlayer" class="rpp-player live">
+<div class="rpp-inner-player">
+<div class="info-player">
+<div class="content-cover-audio">
+<img class="cover-audio" src="//s2.rpp-noticias.io/static/dist/img/rpp-loader-white.svg" alt="RPP Noticias" loading="lazy">
+</div>
+<div class="description-audio">
+<div class="small-title-audio">
+<span class="small-title-audio__inlive flex g-5 align-center">
+<img src="//s2.rpp-noticias.io/static/dist/img/audio_spectrum_opti.gif" alt="" loading="lazy" width="17" height="13">
+Estás escuchando
+</span>
+<span class="small-title-audio__init flex g-5 align-center">
+<img src="//s2.rpp-noticias.io/static/dist/img/envivo_white.svg?v=2" alt="" loading="lazy" width="17" height="14">
+En vivo
+</span>
+</div>
+<div class="title-audio">&nbsp;</div>
+</div>
+</div>
+<div class="content-circle-play">
+<button class="seek-button seek-prev" aria-label="Previo 20 segundos">
+<svg width="25" height="28" viewBox="0 0 25 28" fill="none">
+<path d="M0.999999 15.375C0.999999 21.7263 6.14872 26.875 12.5 26.875C18.8513 26.875 24 21.7263 24 15.375C24 9.02373 18.8513 3.875 12.5 3.875" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M15.5508 1L12.9102 3.18179C12.4302 3.57842 12.4255 4.31259 12.9004 4.71535L15.5407 6.95449" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M10.5732 17.7764V18.875H5.70996V17.9375L8.00977 15.4717C8.24089 15.2145 8.42318 14.9883 8.55664 14.793C8.6901 14.5944 8.78613 14.417 8.84473 14.2607C8.90658 14.1012 8.9375 13.9499 8.9375 13.8066C8.9375 13.5918 8.90169 13.4079 8.83008 13.2549C8.75846 13.0986 8.65267 12.9782 8.5127 12.8936C8.37598 12.8089 8.20671 12.7666 8.00488 12.7666C7.79004 12.7666 7.60449 12.8187 7.44824 12.9229C7.29525 13.027 7.17806 13.1719 7.09668 13.3574C7.01855 13.543 6.97949 13.7529 6.97949 13.9873H5.56836C5.56836 13.5641 5.66927 13.1768 5.87109 12.8252C6.07292 12.4704 6.35775 12.1888 6.72559 11.9805C7.09342 11.7689 7.52962 11.6631 8.03418 11.6631C8.53223 11.6631 8.95215 11.7445 9.29395 11.9072C9.639 12.0667 9.89941 12.2979 10.0752 12.6006C10.2542 12.9001 10.3438 13.2581 10.3438 13.6748C10.3438 13.9092 10.3063 14.1387 10.2314 14.3633C10.1566 14.5846 10.0492 14.806 9.90918 15.0273C9.77246 15.2454 9.60645 15.4668 9.41113 15.6914C9.21582 15.916 8.99935 16.1488 8.76172 16.3896L7.52637 17.7764H10.5732ZM16.2373 14.6953V15.9258C16.2373 16.4596 16.1803 16.9202 16.0664 17.3076C15.9525 17.6917 15.7881 18.0075 15.5732 18.2549C15.3617 18.499 15.1094 18.6797 14.8164 18.7969C14.5234 18.9141 14.1979 18.9727 13.8398 18.9727C13.5534 18.9727 13.2865 18.9368 13.0391 18.8652C12.7917 18.7904 12.5687 18.6748 12.3701 18.5186C12.1748 18.3623 12.0055 18.1654 11.8623 17.9277C11.7223 17.6868 11.6149 17.4004 11.54 17.0684C11.4652 16.7363 11.4277 16.3555 11.4277 15.9258V14.6953C11.4277 14.1615 11.4847 13.7041 11.5986 13.3232C11.7158 12.9391 11.8802 12.625 12.0918 12.3809C12.3066 12.1367 12.5605 11.9577 12.8535 11.8438C13.1465 11.7266 13.472 11.668 13.8301 11.668C14.1165 11.668 14.3818 11.7054 14.626 11.7803C14.8734 11.8519 15.0964 11.9642 15.2949 12.1172C15.4935 12.2702 15.6628 12.4671 15.8027 12.708C15.9427 12.9456 16.0501 13.2305 16.125 13.5625C16.1999 13.8913 16.2373 14.2689 16.2373 14.6953ZM14.8262 16.1113V14.5049C14.8262 14.2477 14.8115 14.0231 14.7822 13.8311C14.7562 13.639 14.7155 13.4762 14.6602 13.3428C14.6048 13.2061 14.5365 13.0954 14.4551 13.0107C14.3737 12.9261 14.2809 12.8643 14.1768 12.8252C14.0726 12.7861 13.957 12.7666 13.8301 12.7666C13.6706 12.7666 13.529 12.7975 13.4053 12.8594C13.2848 12.9212 13.1823 13.0205 13.0977 13.1572C13.013 13.2907 12.9479 13.4697 12.9023 13.6943C12.86 13.9157 12.8389 14.1859 12.8389 14.5049V16.1113C12.8389 16.3685 12.8519 16.5947 12.8779 16.79C12.9072 16.9854 12.9495 17.153 13.0049 17.293C13.0635 17.4297 13.1318 17.542 13.21 17.6299C13.2913 17.7145 13.3841 17.7764 13.4883 17.8154C13.5957 17.8545 13.7129 17.874 13.8398 17.874C13.9961 17.874 14.1344 17.8431 14.2549 17.7812C14.3786 17.7161 14.4827 17.6152 14.5674 17.4785C14.6553 17.3385 14.7204 17.1562 14.7627 16.9316C14.805 16.707 14.8262 16.4336 14.8262 16.1113ZM18.6006 11.375V12.1172C18.6006 12.3288 18.5599 12.5469 18.4785 12.7715C18.4004 12.9961 18.2946 13.2093 18.1611 13.4111C18.0277 13.6097 17.8812 13.779 17.7217 13.9189L17.0625 13.5381C17.1829 13.346 17.2855 13.1377 17.3701 12.9131C17.4548 12.6852 17.4971 12.4215 17.4971 12.1221V11.375H18.6006ZM20.2852 11.375V12.1172C20.2852 12.3288 20.2445 12.5469 20.1631 12.7715C20.085 12.9961 19.9792 13.2093 19.8457 13.4111C19.7122 13.6097 19.5658 13.779 19.4062 13.9189L18.7471 13.5381C18.8675 13.346 18.9701 13.1377 19.0547 12.9131C19.1393 12.6852 19.1816 12.4215 19.1816 12.1221V11.375H20.2852Z" fill="white"/>
+</svg>
+</button>
+<button class="circle-play live-play" aria-label="Play">
+<svg class="play-ico" width="34" height="35" viewBox="0 0 24 25" fill="none"><path d="M8 5.64V19.64L19 12.64L8 5.64Z" fill="#2057A0"/></svg>
+<svg class="pause-ico" width="34" height="34" viewBox="0 0 24 24" fill="none"><path d="M14 19H18V5H14M6 19H10V5H6V19Z" fill="#2057A0"/></svg>
+</button>
+<button class="seek-button seek-next" aria-label="Siguiente 20 segundos">
+<svg width="25" height="28" viewBox="0 0 25 28" fill="none">
+<path d="M24 15.375C24 21.7263 18.8513 26.875 12.5 26.875C6.14873 26.875 1 21.7263 1 15.375C1 9.02373 6.14873 3.875 12.5 3.875" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M9.44922 1L12.0898 3.18179C12.5698 3.57842 12.5745 4.31259 12.0996 4.71535L9.45935 6.95449" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M10.5732 17.7764V18.875H5.70996V17.9375L8.00977 15.4717C8.24089 15.2145 8.42318 14.9883 8.55664 14.793C8.6901 14.5944 8.78613 14.417 8.84473 14.2607C8.90658 14.1012 8.9375 13.9499 8.9375 13.8066C8.9375 13.5918 8.90169 13.4079 8.83008 13.2549C8.75846 13.0986 8.65267 12.9782 8.5127 12.8936C8.37598 12.8089 8.20671 12.7666 8.00488 12.7666C7.79004 12.7666 7.60449 12.8187 7.44824 12.9229C7.29525 13.027 7.17806 13.1719 7.09668 13.3574C7.01855 13.543 6.97949 13.7529 6.97949 13.9873H5.56836C5.56836 13.5641 5.66927 13.1768 5.87109 12.8252C6.07292 12.4704 6.35775 12.1888 6.72559 11.9805C7.09342 11.7689 7.52962 11.6631 8.03418 11.6631C8.53223 11.6631 8.95215 11.7445 9.29395 11.9072C9.639 12.0667 9.89941 12.2979 10.0752 12.6006C10.2542 12.9001 10.3438 13.2581 10.3438 13.6748C10.3438 13.9092 10.3063 14.1387 10.2314 14.3633C10.1566 14.5846 10.0492 14.806 9.90918 15.0273C9.77246 15.2454 9.60645 15.4668 9.41113 15.6914C9.21582 15.916 8.99935 16.1488 8.76172 16.3896L7.52637 17.7764H10.5732ZM16.2373 14.6953V15.9258C16.2373 16.4596 16.1803 16.9202 16.0664 17.3076C15.9525 17.6917 15.7881 18.0075 15.5732 18.2549C15.3617 18.499 15.1094 18.6797 14.8164 18.7969C14.5234 18.9141 14.1979 18.9727 13.8398 18.9727C13.5534 18.9727 13.2865 18.9368 13.0391 18.8652C12.7917 18.7904 12.5687 18.6748 12.3701 18.5186C12.1748 18.3623 12.0055 18.1654 11.8623 17.9277C11.7223 17.6868 11.6149 17.4004 11.54 17.0684C11.4652 16.7363 11.4277 16.3555 11.4277 15.9258V14.6953C11.4277 14.1615 11.4847 13.7041 11.5986 13.3232C11.7158 12.9391 11.8802 12.625 12.0918 12.3809C12.3066 12.1367 12.5605 11.9577 12.8535 11.8438C13.1465 11.7266 13.472 11.668 13.8301 11.668C14.1165 11.668 14.3818 11.7054 14.626 11.7803C14.8734 11.8519 15.0964 11.9642 15.2949 12.1172C15.4935 12.2702 15.6628 12.4671 15.8027 12.708C15.9427 12.9456 16.0501 13.2305 16.125 13.5625C16.1999 13.8913 16.2373 14.2689 16.2373 14.6953ZM14.8262 16.1113V14.5049C14.8262 14.2477 14.8115 14.0231 14.7822 13.8311C14.7562 13.639 14.7155 13.4762 14.6602 13.3428C14.6048 13.2061 14.5365 13.0954 14.4551 13.0107C14.3737 12.9261 14.2809 12.8643 14.1768 12.8252C14.0726 12.7861 13.957 12.7666 13.8301 12.7666C13.6706 12.7666 13.529 12.7975 13.4053 12.8594C13.2848 12.9212 13.1823 13.0205 13.0977 13.1572C13.013 13.2907 12.9479 13.4697 12.9023 13.6943C12.86 13.9157 12.8389 14.1859 12.8389 14.5049V16.1113C12.8389 16.3685 12.8519 16.5947 12.8779 16.79C12.9072 16.9854 12.9495 17.153 13.0049 17.293C13.0635 17.4297 13.1318 17.542 13.21 17.6299C13.2913 17.7145 13.3841 17.7764 13.4883 17.8154C13.5957 17.8545 13.7129 17.874 13.8398 17.874C13.9961 17.874 14.1344 17.8431 14.2549 17.7812C14.3786 17.7161 14.4827 17.6152 14.5674 17.4785C14.6553 17.3385 14.7204 17.1562 14.7627 16.9316C14.805 16.707 14.8262 16.4336 14.8262 16.1113ZM18.6006 11.375V12.1172C18.6006 12.3288 18.5599 12.5469 18.4785 12.7715C18.4004 12.9961 18.2946 13.2093 18.1611 13.4111C18.0277 13.6097 17.8812 13.779 17.7217 13.9189L17.0625 13.5381C17.1829 13.346 17.2855 13.1377 17.3701 12.9131C17.4548 12.6852 17.4971 12.4215 17.4971 12.1221V11.375H18.6006ZM20.2852 11.375V12.1172C20.2852 12.3288 20.2445 12.5469 20.1631 12.7715C20.085 12.9961 19.9792 13.2093 19.8457 13.4111C19.7122 13.6097 19.5658 13.779 19.4062 13.9189L18.7471 13.5381C18.8675 13.346 18.9701 13.1377 19.0547 12.9131C19.1393 12.6852 19.1816 12.4215 19.1816 12.1221V11.375H20.2852Z" fill="white"/>
+</svg>
+</button>
+</div>
+<button class="toogle-player">
+<svg class="arrow-down" width="12" height="7" viewBox="0 0 12 7" fill="none">
+<path d="M6 7L0 1.16667L1.2 0L6 4.66667L10.8 0L12 1.16667L6 7Z" fill="white"/>
+</svg>
+</button>
+<div class="status-bar">
+<div class="progress-bar-area">
+<div class="progress-bar-total"><div class="progress-bar-move"></div></div>
+<div class="progress-bar-radio-total"><div class="progress-bar-radio-move"></div></div>
+</div>
+<div class="time-display">
+<span class="current-time">00:00</span>
+<span class="separator-time">/</span>
+<span class="total-time">00:00</span>
+</div>
+</div>
+</div>
+
+< <div class="player-accordion">
+<div class="item-accordion">
+<button class="item-accordion-header">
+<div class="title-header-accordion">
+<i class="icon-live"></i> Sintoniza tu región
+</div>
+<i class="toogle-icon icon-chevron-down"></i>
+</button>
+<div class="accordion-collapsable">
+<div class="inner-collapsable">
+<div class="item-stations">
+  <div class="cont-station">
+    <button class="play-icon faux-audio" data-id="1">
+      <i class="icon-media"></i>
+      <script>
+        var _fmedia = _fmedia || {};
+        _fmedia[1] = {live: true};
+      </script>
+    </button>
+    <div class="info-station">
+      <div class="title-station">Lima</div>
+      <div class="dial-station">89.7 FM /730 AM</div>
+    </div>
+  </div>
+  <div class="link-station">
+    <a href="https://rpp.pe/audio/guia-de-programacion" target="_blank">Ver programación</a>
+  </div>
+</div>
+
+<div class="item-stations">
+  <div class="cont-station">
+    <button class="play-icon faux-audio" data-id="10">
+      <i class="icon-media"></i>
+      <script>
+        _fmedia[10] = {live: true};
+      </script>
+    </button>
+    <div class="info-station">
+      <div class="title-station">Arequipa</div>
+      <div class="dial-station">102.3 FM / 1170 AM</div>
+    </div>
+  </div>
+  <div class="link-station">
+    <a href="https://rpp.pe/audio/guia-de-programacion" target="_blank">Ver programación</a>
+  </div>
+</div>
+
+<div class="item-stations">
+  <div class="cont-station">
+    <button class="play-icon faux-audio" data-id="12">
+      <i class="icon-media"></i>
+      <script>
+        _fmedia[12] = {live: true};
+      </script>
+    </button>
+    <div class="info-station">
+      <div class="title-station">Chiclayo</div>
+      <div class="dial-station">96.7 FM / 870 AM</div>
+    </div>
+  </div>
+  <div class="link-station">
+    <a href="https://rpp.pe/audio/guia-de-programacion" target="_blank">Ver programación</a>
+  </div>
+</div>
+
+<div class="item-stations">
+  <div class="cont-station">
+    <button class="play-icon faux-audio" data-id="11">
+      <i class="icon-media"></i>
+      <script>
+        _fmedia[11] = {live: true};
+      </script>
+    </button>
+    <div class="info-station">
+      <div class="title-station">Huancayo</div>
+      <div class="dial-station">97.3 FM / 1140 AM</div>
+    </div>
+  </div>
+  <div class="link-station">
+    <a href="https://rpp.pe/audio/guia-de-programacion" target="_blank">Ver programación</a>
+  </div>
+</div>
+
+<div class="item-stations">
+  <div class="cont-station">
+    <button class="play-icon faux-audio" data-id="9">
+      <i class="icon-media"></i>
+      <script>
+        _fmedia[9] = {live: true};
+      </script>
+    </button>
+    <div class="info-station">
+      <div class="title-station">Trujillo</div>
+      <div class="dial-station">90.9 FM / 790 AM</div>
+    </div>
+  </div>
+  <div class="link-station">
+    <a href="https://rpp.pe/audio/guia-de-programacion" target="_blank">Ver programación</a>
+  </div>
+</div>
+
+<div class="item-stations">
+  <div class="cont-station">
+    <button class="play-icon faux-audio" data-id="14">
+      <i class="icon-media"></i>
+      <script>
+        _fmedia[14] = {live: true};
+      </script>
+    </button>
+    <div class="info-station">
+      <div class="title-station">Piura</div>
+      <div class="dial-station">103.3 FM / 920 AM</div>
+    </div>
+  </div>
+  <div class="link-station">
+    <a href="https://rpp.pe/audio/guia-de-programacion" target="_blank">Ver programación</a>
+  </div>
+</div>
+
+<div class="item-stations">
+  <div class="cont-station">
+    <button class="play-icon faux-audio" data-id="15">
+      <i class="icon-media"></i>
+      <script>
+        _fmedia[15] = {live: true};
+      </script>
+    </button>
+    <div class="info-station">
+      <div class="title-station">Cusco</div>
+      <div class="dial-station">93.3 FM</div>
+    </div>
+  </div>
+  <div class="link-station">
+    <a href="https://rpp.pe/audio/guia-de-programacion" target="_blank">Ver programación</a>
+  </div>
+</div>
+
+<div class="item-stations">
+  <div class="cont-station">
+    <button class="play-icon faux-audio" data-id="13">
+      <i class="icon-media"></i>
+      <script>
+        _fmedia[13] = {live: true};
+      </script>
+    </button>
+    <div class="info-station">
+      <div class="title-station">Cajamarca</div>
+      <div class="dial-station">100.7 FM / 1130 AM</div>
+    </div>
+  </div>
+  <div class="link-station">
+    <a href="https://rpp.pe/audio/guia-de-programacion" target="_blank">Ver programación</a>
+  </div>
+</div>
+
+</div>
+</div>
+</div>
+<div class="item-accordion">
+<button class="item-accordion-header" data-granresumen="true">
+<div class="title-header-accordion">
+El gran resumen de la hora
+</div>
+<i class="toogle-icon icon-chevron-down"></i>
+</button>
+
+<div class="accordion-collapsable">
+<div class="inner-collapsable">
+<div class="item-stations">
+  <div class="cont-station">
+    <button class="play-icon faux-audio loading" id="btnGranresumen">
+      <i class="icon-media"></i>
+    </button>
+    <div class="info-station">
+      <div class="title-station">La información más relevante de la actualidad al momento</div>
+      <div class="dial-station">Actualizado hace <span class="mins-granresumen">0</span> minutos</div>
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+</div>
+<div class="item-accordion">
+<button class="item-accordion-header">
+<div class="title-header-accordion">
+Podcast RPP
+</div>
+<i class="toogle-icon icon-chevron-down"></i>
+</button>
+<div class="accordion-collapsable">
+<div class="inner-collapsable">
+                    <div class="item-player-podcast">
+  <div class="cover-podcast">
+    <img class="image-podcast" src="https://f.radio-grpp.io/cutter/2022/08/22/1661171352.jpg?width=75&height=75&crop=smart&auto=webp&quality=80" loading="lazy" alt="">
+  </div>
+  <div class="info-podcast">
+    <div class="title-podcast">
+      Reflexiones del evangelio                        </div>
+    <div class="title-episode">
+      Miércoles 14 de mayo | (San Matías, apóstol) - "No hay amor más grande que dar la vida por los amigos. Ustedes son mis amigos si hacen lo que yo les mando"                        </div>
+    <div class="detals-episode">
+      EP 969 &#x2022; 12:07                        </div>
+  </div>
+  <button id="btnPodcast" data-cta="Miércoles 14 de mayo | (San Matías, apóstol) - "No hay amor más grande que dar la vida por los amigos. Ustedes son mis amigos si hacen lo que yo les mando"" class="play-icon faux-audio" data-id="682229a0ac45034c31ba73cc">
+    <i class="icon-media"></i>
+    <script>
+      var _fmedia = _fmedia || {};
+      _fmedia['682229a0ac45034c31ba73cc'] = {
+        id: '682229a0ac45034c31ba73cc',
+        url: 'https://rpp.pe/audio/podcast/reflexiones-del-evangelio/miercoles-14-de-mayo-san-matias-apostol-no-hay-amor-mas-grande-que-dar-la-vida-por-los-amigos-ustedes-son-mis-amigos-si-hacen-lo-que-yo-les-mando-22934',
+        cover: 'https://md1.rpp-noticias.io/256x256/cutter/2022/08/22/1661171352.jpg',
+        title: 'Miércoles 14 de mayo | (San Matías, apóstol) - &quot;No hay amor más grande que dar la vida por los amigos. Ustedes son mis amigos si hacen lo que yo les mando&quot;',
+        tipo: 'podcast'
+      }
+    </script>
+  </button>
+</div>
+                                        <div class="item-player-podcast">
+  <div class="cover-podcast">
+    <img class="image-podcast" src="https://f.radio-grpp.io/cutter/2024/03/06/1709780968.jpg?width=75&height=75&crop=smart&auto=webp&quality=80" loading="lazy" alt="">
+  </div>
+  <div class="info-podcast">
+    <div class="title-podcast">
+      El Club de la Green Card                        </div>
+    <div class="title-episode">
+      Ciudadanía americana: 5 preguntas que siempre caen en el examen                        </div>
+    <div class="detals-episode">
+      EP 191 &#x2022; 01:16                        </div>
+  </div>
+  <button id="btnPodcast" data-cta="Ciudadanía americana: 5 preguntas que siempre caen en el examen" class="play-icon faux-audio" data-id="682278c8e637d62ac942b206">
+    <i class="icon-media"></i>
+    <script>
+      var _fmedia = _fmedia || {};
+      _fmedia['682278c8e637d62ac942b206'] = {
+        id: '682278c8e637d62ac942b206',
+        url: 'https://rpp.pe/audio/podcast/el-club-de-la-green-card/ciudadania-americana-5-preguntas-que-siempre-caen-en-el-examen-22942',
+        cover: 'https://md1.rpp-noticias.io/256x256/cutter/2024/03/06/1709780968.jpg',
+        title: 'Ciudadanía americana: 5 preguntas que siempre caen en el examen',
+        tipo: 'podcast'
+      }
+    </script>
+  </button>
+</div>
+                                        <div class="item-player-podcast">
+  <div class="cover-podcast">
+    <img class="image-podcast" src="https://f.radio-grpp.io/cutter/2022/10/27/1666908734.jpg?width=75&height=75&crop=smart&auto=webp&quality=80" loading="lazy" alt="">
+  </div>
+  <div class="info-podcast">
+    <div class="title-podcast">
+      Informes RPP                        </div>
+    <div class="title-episode">
+      Real Plaza: a dos meses de la tragedia                        </div>
+    <div class="detals-episode">
+      EP 1290 &#x2022; 04:50                        </div>
+  </div>
+  <button id="btnPodcast" data-cta="Real Plaza: a dos meses de la tragedia" class="play-icon faux-audio" data-id="68221efabaea7f62890e6c4b">
+    <i class="icon-media"></i>
+    <script>
+      var _fmedia = _fmedia || {};
+      _fmedia['68221efabaea7f62890e6c4b'] = {
+        id: '68221efabaea7f62890e6c4b',
+        url: 'https://rpp.pe/audio/podcast/informes-rpp/real-plaza-a-dos-meses-de-la-tragedia-22932',
+        cover: 'https://md1.rpp-noticias.io/256x256/cutter/2022/10/27/1666908734.jpg',
+        title: 'Real Plaza: a dos meses de la tragedia',
+        tipo: 'podcast'
+      }
+    </script>
+  </button>
+</div>
+                  </div>
+</div>
+</div>
+</div>
